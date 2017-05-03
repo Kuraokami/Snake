@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="loginTest">
+		<parameter name="login-name" value="gap-automation-test@mailinator.com" />
+		<parameter name="password" value="12345678" />
+		<classes>
+			<class name="gap.com.snake.gap.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="CreateTest">
+		<parameter name="login-name" value="gap-automation-test@mailinator.com" />
+		<parameter name="password" value="12345678" />
+		<parameter name="employee_first_name" value="James" />
+		<parameter name="employee_last_name" value="Smith" />
+		<parameter name="employee_identification" value="1234567890" />
+		<parameter name="employee_email" value="jsmith@mailinator.com" />
+		<parameter name="employee_leader_name" value="Frederik Rodriguez" />
+		<parameter name="employee_start_working_on" value="21-01-2010" />
+		<classes>
+			<class name="gap.com.snake.gap.CreateTest" />
+		</classes>
+	</test>
+
+	<test name="VerifyTest">
+		<parameter name="employee_identification" value="1234567890" />
+		<classes>
+			<class name="gap.com.snake.gap.VerifyTest" />
+		</classes>
+	</test>
+
+	<test name="DeleteTest">
+		<parameter name="login-name" value="gap-automation-test@mailinator.com" />
+		<parameter name="password" value="12345678" />
+		<parameter name="employee_identification" value="1234567890" />
+		<classes>
+			<class name="gap.com.snake.gap.DeleteTest" />
+		</classes>
+	</test>
+
+</suite>
