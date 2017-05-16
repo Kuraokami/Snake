@@ -7,5 +7,16 @@ pipeline {
         sh 'mvn compile'
       }
     }
+    stage('Test') {
+      steps {
+        echo 'Testing'
+        sh 'mvn test'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Yayyyyy'
+      }
+    }
   }
 }
